@@ -1,0 +1,139 @@
+/* General styles */
+.companySelectionContainer {
+  padding: 20px;
+}
+
+.header {
+  z-index: 99;
+  width: 100%;
+  position: fixed;
+  top: 100;
+  left: 0;
+  background: #001529;
+  color: white;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.headerTitle {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.headerIcons {
+  display: flex;
+  gap: 10px;
+}
+
+.searchBar {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.productItem {
+  padding: 10px;
+  border: 1px solid #8d3d3d;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.status {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Spinner container */
+.spinnerContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 1000;
+}
+
+.greenDot {
+    position: absolute;
+    top: 1.5vh;
+    left: 2.5vh;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px; /* Adjust the margin as needed */
+  }
+  
+/* Responsive styles */
+
+/* Larger than mobile */
+@media (min-width: 576px) {
+  .companySelectionContainer {
+    padding: 20px;
+  }
+
+  .headerTitle {
+    font-size: 24px;
+  }
+
+  .searchBar {
+    margin-bottom: 20px;
+    width: 200%;
+  }
+
+  .productItem {
+    padding: 10px;
+  }
+
+  .status {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .companySelectionContainer {
+    padding: 30px;
+  }
+
+  .headerTitle {
+    font-size: 26px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .companySelectionContainer {
+    padding: 40px;
+  }
+
+  .headerTitle {
+    font-size: 28px;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+  .companySelectionContainer {
+    padding: 50px;
+  }
+
+  .headerTitle {
+    font-size: 30px;
+  }
+}
